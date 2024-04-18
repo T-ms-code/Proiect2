@@ -1,2 +1,89 @@
+3
+1
+1
+9A
+3
+9A
+Popa Ion
+Matematica
+20
+9A
+2
+9A
+4
+0
+3
+Ulmeanu Florin
+Matematica
+15
+2
+0
+3
+1
+1
+9A
+0
+0
+2
+1
+12A
+Telu Mihai
+3
+12A
+Telu Mihai
+0
+4
+1
+2
+9B
+Laura Florea
+Informatica
+10
+9B
+3
+9A
 5
-11 22 33 44 55
+6
+1
+5
+0
+2
+2
+9B
+Stan Antonio
+5
+9B
+Stan Antonio
+8
+9B
+Stan Antonio
+De_merit
+700
+6
+8
+10C
+Ionel Coman
+Sociala
+360
+7
+0
+1
+4
+9B
+Chimie
+0
+2
+4
+9B
+Stan Antonio
+Chimie
+10
+0
+1
+1
+0
+5
+100
+5
+1
+0
