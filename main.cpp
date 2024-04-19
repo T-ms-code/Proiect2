@@ -100,6 +100,8 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
     vector<Bursier*>Bref;
     vector<Elev*>Eref;
     vector<Diriginte*>Dref;
+    vector<Profesor*>Pref;
+
 
     int n;
     do {
@@ -633,6 +635,7 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                             cout << "Adauga profesor" << endl;
                             int ok=0;
                             auto* p=new Profesor();
+                            Pref.push_back(p);
                             cin.get();
                             cin>>*p;
                             for(auto & i : P)
@@ -706,6 +709,7 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
 
     for(auto & i : Eref)delete i;
     for(auto & i : Bref)delete i;
+    for(auto & i : Pref)delete i;
     for(auto & i : Dref)delete i;
 }
 
