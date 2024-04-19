@@ -4,6 +4,7 @@
 
 #ifndef OOP_BURSIER_H
 #define OOP_BURSIER_H
+#include <string>
 #include "elev.h"
 
 class Bursier : public Elev {
@@ -12,7 +13,7 @@ private:
     int suma_incasata = 0;
 public:
     Bursier([[maybe_unused]] std::string nume, int absente, [[maybe_unused]] std::vector<Materie> materii, std::string bursa, int suma);
-    Bursier();
+    explicit Bursier(std::string s="",int suma=0);
     Bursier(const Elev& e, std::string bursa, int suma);
     ~Bursier() override;
     Bursier(const Bursier& b);

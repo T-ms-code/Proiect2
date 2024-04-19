@@ -1,16 +1,14 @@
 //
 // Created by Mihai Telu on 4/18/2024.
 //
-
+#include <string>
+#include <utility>
 #include "bursier.h"
 
 Bursier::Bursier([[maybe_unused]] std::string nume, int absente, [[maybe_unused]] std::vector<Materie> materii, std::string bursa, int suma)
         : Elev(std::move(nume), absente, std::move(materii)), nume_bursa(std::move(bursa)), suma_incasata(suma) {}
 
-Bursier::Bursier() : Elev() {
-    nume_bursa = "";
-    suma_incasata = 0;
-}
+Bursier::Bursier(std::string s, int suma) : Elev(), nume_bursa(std::move(s)), suma_incasata(suma) {}
 
 Bursier::Bursier(const Elev& e, std::string bursa, int suma) : Elev(e), nume_bursa(std::move(bursa)), suma_incasata(suma) {}
 

@@ -17,7 +17,8 @@ public:
     Clasa(std::string nume_clasa, const Diriginte& d, const Elev* elevi, int nr_elevi);
     Clasa();
     ~Clasa();
-//    Clasa(const Clasa& c);
+
+    [[maybe_unused]] Clasa(const Clasa& c);
     Clasa& operator=(const Clasa& c);
     friend std::ostream& operator<<(std::ostream& out, const Clasa& c);
     friend std::istream& operator>>(std::istream& in, Clasa& c);

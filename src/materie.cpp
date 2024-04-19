@@ -10,8 +10,7 @@ Materie::Materie(){
     v.resize(0);
 }
 
-Materie::Materie(std::string s){
-    nume_materie=std::move(s);
+Materie::Materie(std::string s):nume_materie(std::move(s)){
     nr_note=0;
     v.resize(0);
 }

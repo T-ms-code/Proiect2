@@ -28,19 +28,19 @@ Clasa::~Clasa() {
     delete[] elevi;
 }
 
-//Clasa::Clasa(const Clasa& c) {
-//    this->nume_clasa = c.nume_clasa;
-//    this->d = c.d;
-//    if (c.elevi != nullptr && c.nr_elevi > 0) {
-//        this->nr_elevi = c.nr_elevi;
-//        this->elevi = new Elev[this->nr_elevi];
-//        for (int i = 0; i < this->nr_elevi; i++)
-//            this->elevi[i] = c.elevi[i];
-//    } else {
-//        this->elevi = nullptr;
-//        this->nr_elevi = 0;
-//    }
-//}
+[[maybe_unused]] Clasa::Clasa(const Clasa& c) {
+    this->nume_clasa = c.nume_clasa;
+    this->d = c.d;
+    if (c.elevi != nullptr && c.nr_elevi > 0) {
+        this->nr_elevi = c.nr_elevi;
+        this->elevi = new Elev[this->nr_elevi];
+        for (int i = 0; i < this->nr_elevi; i++)
+            this->elevi[i] = c.elevi[i];
+    } else {
+        this->elevi = nullptr;
+        this->nr_elevi = 0;
+    }
+}
 
 Clasa& Clasa::operator=(const Clasa& c) {
     if (this != &c) {
