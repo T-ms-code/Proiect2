@@ -13,10 +13,11 @@ class Materie{
     std::vector<int> v;
     static int numar_min_note;
 public:
-    Materie();
-    explicit Materie(std::string s);
+    explicit Materie(std::string s="");
+//    explicit Materie(std::string s);
     Materie(std::string s, std::vector<int> a, int n);
     ~Materie();
+    Materie(const Materie& m);
     Materie& operator=(const Materie& m);
     float medie();
     int& get_nr_note();
