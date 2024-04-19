@@ -219,11 +219,12 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                             cout<<"Conditiile de promovare pentru orice materie sunt ca: numarul de note sa fie cel putin egal cu "<<Materie::get_nrminnote()<<" si ca media sa fie cel putin 5."<<endl;
                             cout<<"Elevi in stare de corigenta:"<<endl;
                             for(auto & i : E){
-                                int ok=0;
+                                int ok=1;
+                                if(i->get_materii().empty()) ok=0;
                                 for(unsigned long long j=0;j<i->get_materii().size();j++)
                                     if(i->get_materii()[j].get_nr_note()<Materie::get_nrminnote()||i->get_materii()[j].medie()<5)
-                                        ok=1;
-                                if(ok==1)cout<<i->getnume_elev()<<endl;
+                                        ok=0;
+                                if(ok==0)cout<<i->getnume_elev()<<endl;
                             }
                             cout<<endl<<endl<<endl;
                             break;
@@ -541,6 +542,12 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                                         int ok = 0;
                                         for (int i = 0; i < nr_clase; i++) {
                                             if (clase[i].getnume() == numeClasa) {
+                                                for(auto & j : D)
+                                                    if(j==clase[i].getdiriginte())
+                                                        j.AdaugareVchime();
+                                                for(auto & j : P)
+                                                    if(j==clase[i].getdiriginte())
+                                                        j.AdaugareVchime();
                                                 clase[i].setvechime();
                                                 cout << endl;
                                                 ok = 1;
