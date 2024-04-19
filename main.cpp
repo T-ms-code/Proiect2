@@ -701,5 +701,11 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
             }
         }
     }while (n != 0);
+
+
+
+    for(auto & i : Eref)delete i;
+    for(auto & i : Bref)delete i;
+    for(auto & i : Dref)delete i;
 }
 
