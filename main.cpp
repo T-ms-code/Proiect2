@@ -97,6 +97,10 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
     for(auto & i : P)Pers.push_back(&i);
     for(auto & i : E)Pers.push_back(i);
 
+    vector<Bursier*>Bref;
+    vector<Elev*>Eref;
+    vector<Diriginte*>Dref;
+
     int n;
     do {
         cout << "          MENIU-CATALOAGELE LICEULUI X    " << endl;
@@ -296,6 +300,7 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                             cout<<"Numele noului elev: ";
                             getline(cin,numeElev);
                             Elev* e= new Elev(numeElev);
+                            Eref.push_back(e);
                             int ok=0;
                             for(int i=0;i<nr_clase;i++)
                                 if(clase[i].getnume()==numeClasa)
@@ -452,6 +457,7 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                                     for(int j=0;j<clase[i].getnrelevi();j++)
                                         if(clase[i].getelevi()[j].getnume_elev()==numeElev)
                                         {auto* b= new Bursier(clase[i].getelevi()[j],bursa,suma);
+                                            Bref.push_back(b);
                                             int ok1=1;
                                             for(auto & k : B)
                                                 if(k->getnume_elev()==b->getnume_elev()&&k->get_bursa()==b->get_bursa())ok1=0;
@@ -554,8 +560,10 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                                             if (clase[i].getnume() == numeClasa) {
                                                 cout << "Datele noului diriginte: " << endl;
                                                 auto* d=new Diriginte();
+                                                Dref.push_back(d);
                                                 cin>>*d;
                                                 auto* p=new Diriginte();
+                                                Dref.push_back(p);
                                                 *p=clase[i].getdiriginte();
                                                 int ok3=0;
                                                 for(auto & j : D)
