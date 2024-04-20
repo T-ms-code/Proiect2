@@ -11,7 +11,10 @@
 #include "profesor.h"
 #include "diriginte.h"
 #include "clasa.h"
+#include "director.h"
 using namespace std;
+
+
 
 
 void Satut_cadru_didactic(Profesor& p){
@@ -103,6 +106,8 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
     vector<Profesor*>Pref;
 
 
+    Director Dir(P1,2000);
+
     int n;
     do {
         cout << "          MENIU-CATALOAGELE LICEULUI X    " << endl;
@@ -111,6 +116,7 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
         cout << "Apasa 3 pentru OPTIUNI-PROFESORI" << endl;
         cout << "Apasa 4 pentru a vizualiza ISTORICUL LICEULUI" <<endl;
         cout << "Apasa 5 pentru a CAUTA UN ELEV DUPA INDEX(un numar-ordinea inscrierii-) in istoric" <<endl;
+        cout << "Apasa 6 pentru informatii despre DIRECTOR" <<endl;
         cout << "Apasa 0 pentru A IESI" << endl;
         cin >> n;
         if(n==0){break;}
@@ -698,6 +704,19 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                 } catch (Exceptie& e) {
                     cout<<"Eroare: "<< e.what() <<endl;
                 }
+                cout << endl << endl << endl << endl;
+                cout<<"-------------------------------------------------------------------------------------------------"<<endl;
+                break;
+            }
+
+
+
+
+
+
+            case(6):{
+                cout<<"Directorul liceului X:"<<endl;
+                Satut_cadru_didactic(Dir);
                 cout << endl << endl << endl << endl;
                 cout<<"-------------------------------------------------------------------------------------------------"<<endl;
                 break;

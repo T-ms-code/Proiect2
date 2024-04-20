@@ -8,6 +8,7 @@
 #include "profesor.h"
 #include "diriginte.h"
 #include "clasa.h"
+#include "director.h"
 
 
 
@@ -432,4 +433,12 @@ TEST(ClasaTest, ExmatriculeazaElev) {
 
     EXPECT_EQ(clasa.getnrelevi(), 1);
     EXPECT_EQ(clasa.getelevi()[0].getnume_elev(), "Bob");
+}
+
+
+TEST(DirectorTest, StatutTest) {
+    Profesor profesor{"John Doe", "Math", 20};
+    Director director{profesor, 2020};
+    // Not testing output since it goes to standard output
+    director.Statut();
 }
