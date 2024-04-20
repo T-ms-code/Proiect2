@@ -133,7 +133,9 @@ add_executable(${PROJECT_NAME} main.cpp ${SOURCES}
         src/diriginte.cpp
         include/diriginte.h
         src/clasa.cpp
-        include/clasa.h)
+        include/clasa.h
+        src/director.cpp
+        include/director.h)
 
 ###############################################################################
 

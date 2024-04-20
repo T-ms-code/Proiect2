@@ -8,6 +8,7 @@
 #include "profesor.h"
 #include "diriginte.h"
 #include "clasa.h"
+#include "director.h"
 
 
 
@@ -432,4 +433,14 @@ TEST(ClasaTest, ExmatriculeazaElev) {
 
     EXPECT_EQ(clasa.getnrelevi(), 1);
     EXPECT_EQ(clasa.getelevi()[0].getnume_elev(), "Bob");
+}
+
+
+TEST(DirectorTest, StatutTest) {
+    Profesor profesor{"John Doe", "Math", 20};
+    Director director{profesor, 2020};
+    testing::internal::CaptureStdout(); // Capturarea output-ului
+    director.Statut();
+    std::string output = testing::internal::GetCapturedStdout(); // Obținerea output-ului capturat
+    EXPECT_EQ(output, "John Doe este director din anul 2020.");
 }
