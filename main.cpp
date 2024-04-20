@@ -28,7 +28,7 @@ int main() {
     P.push_back(P1); P.push_back(P2); P.push_back(P3); P.push_back(P4);P.push_back(P5);P.push_back(P6);P.push_back(P7);P.push_back(P8);P.push_back(P9);P.push_back(P10);P.push_back(P11);
     vector<Diriginte>D;
     Diriginte D1(P1,"9A"),D2(P2,"12A"),D3(P3,"10A"),D4(P4,"11A");
-    D.push_back(D1);D.push_back(D2); D.push_back(D3); D.push_back(D4);
+     D.push_back(D1);D.push_back(D2); D.push_back(D3); D.push_back(D4);
     vector <int> v1 = {7, 9, 10};
     vector <int> v2 = {2, 10, 10};
     vector <int> v3 = {4, 4, 8};
