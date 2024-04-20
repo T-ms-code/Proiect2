@@ -161,7 +161,7 @@ vector<Materie>m10;m10.push_back(M1);m10.push_back(M10);m10.push_back(M4);
                             int ok=0;
                             for(auto & i : P)
                                 if(d==i)ok=1;
-                            if(ok==0){P.push_back(d);Pers.push_back(&d);}
+                            if(ok==0){P.push_back(d);Pers.push_back(&P[P.size()-1]);}
                             nr_clase++;
                             cout<<endl<<endl<<endl;
                             break;

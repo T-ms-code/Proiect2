@@ -1,89 +1,107 @@
-3
 1
 1
-9A
-3
-9A
+2
+9C
 Popa Ion
 Matematica
 20
+9C
+3
+9A
+4
+12A
+Filosofie
+5
+6
+1
+5
+0
+2
+1
+12A
+Telu Mihai
+3
+12A
+Fugulin Victor-Gabriel
+2
+12A
+Malurica Dan
+4
+12A
+Telu Mihai
+Filosofie
+10
+5
+12A
+Malurica Dan
+6
+2
+9C
+Stan Antonio
+2
+12A
+Stan Dana
+7
+8
+9C
+Stan Antonio
+Bursa_de_merit
+550
+3
+9A
+Pandeliu Casian
+7
+0
+1
+4
+9C
+Matematica
+0
+2
+5
+9C
+Stan Antonio
+4
+9C
+Stan Antonio
+Matematica
+7
+0
+3
+1
+1
 9A
 2
+9A
+3
+9A
+Florea Laura
+Informatica
+10
 9A
 4
 0
 3
 Ulmeanu Florin
-Matematica
-15
-2
-0
-3
-1
-1
-9A
-0
-0
-2
-1
-12A
-Telu Mihai
-3
-12A
-Telu Mihai
-0
-4
-1
-2
-9B
-Laura Florea
-Informatica
-10
-9B
-3
-9A
-5
-6
-1
-5
-0
-2
-2
-9B
-Stan Antonio
-5
-9B
-Stan Antonio
-8
-9B
-Stan Antonio
-De_merit
-700
-6
-8
-10C
-Ionel Coman
-Sociala
-360
-7
-0
-1
-4
-9B
 Chimie
+25
+2
+0
+1
+1
+5
 0
 2
+2
+9C
+Calin Ionut
+0
+1
+1
+0
 4
-9B
-Stan Antonio
-Chimie
-10
-0
-1
-1
-0
 5
-100
+400
 5
-1
+9
 0
